@@ -8,6 +8,7 @@ pipeline {
         // TODO: run this simple pipeline on jenkins 'master' node
 	node {
 		label 'master'
+      	}
       }
     }
 
@@ -47,5 +48,4 @@ pipeline {
         }
 
     }
-}
 }
