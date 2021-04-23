@@ -6,9 +6,7 @@ pipeline {
     agent {
       node {
         // TODO: run this simple pipeline on jenkins 'master' node
-	node {
 		label 'master'
-      	}
       }
     }
 
@@ -36,7 +34,7 @@ pipeline {
 	stage('manual approval') {
 		steps {
 			timeout(time: 60, unit: 'MINUTES') {
-				input messege: "Move to stage 3??"
+				input message: "Move to stage 3??"
 			}
 		}
 	}
